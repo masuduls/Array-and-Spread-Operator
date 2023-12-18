@@ -1,0 +1,14 @@
+// Spread Operator Example: Combining Arrays
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const combinedArray = [...arr1, ...arr2];
+console.log("Combined Array:", combinedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+// Rest Parameter Example: Function with Variable Arguments
+function multiply(...nums) {
+  return nums.reduce((acc, num) => acc * num, 1);
+}
+
+const product = multiply(2, 3, 4);
+console.log("Product:", product); // Output: 24
